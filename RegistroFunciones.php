@@ -66,10 +66,11 @@ if ( isset($_COOKIE['email']) ) {
 			}
 		}
 		return $errores;
-
+ if (!$errores) {
+	header('location: perfil_usuario.php');
+	exit;
 }
-
-
+}
 
 	function guardarUsuario() {
 		$listaDeUsuarios = getAllUsers();

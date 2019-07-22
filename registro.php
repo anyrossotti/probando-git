@@ -32,8 +32,7 @@ if($_POST){
     $_POST['imagenFinal'] = $img;
     guardarUsuario();
   }
-}
-?>
+}     ?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -49,27 +48,13 @@ if($_POST){
 	<body>
 
 		<div class="contenedor">
+      <div class="row">
 			<!-- header -->
       <header class="cabecera">
-        <nav class="nav-login">
-        	<ul>
-            <li><a href="login.php"><b>Login</b></a></li>
-          </ul>
-        </nav>
-
-      	<div class="main-nav">
-      		<nav class="main-navv">
-      			<ul>
-				      <li><a href="inicio.php"><b>Inicio</b></a></li>
-				      <li><a href=""><b>Productos</b></a></li>
-				      <li><a href="PregFrecuentesF.php"><b>Preguntas Frecuentes</b></a></li>
-            </ul>
-      		</nav>
-				</div>
-
-      	<!-- Logo -->
-      	<?php require_once "_logo.php" ?>
-      </header>
+<div class="navbar">
+    <?php require_once "_navbar.php"; ?>
+</div>
+</header>
       <section>
         <article class="formulario">
 					<h2>REGISTRATE!</h2>
@@ -142,9 +127,7 @@ if($_POST){
 						<?= $erroresRegistro['pais']; ?>
 						</div>
 						<?php endif; ?>
-						<br>
-						<br>
-
+						<br>	<br>
 						<label><b>Imagen de perfil:</b></label>
 						<input type="file" name='avatar' class="file">
 						<?php if (isset($erroresRegistro['avatar'])) : ?>
@@ -152,13 +135,12 @@ if($_POST){
 						    <?= $erroresRegistro['avatar']; ?>
 						  </div>
 						<?php endif; ?>
-						<br>
-						<br>
 
 						<button class="registro" type="submit" name="Registrarme" value="">Registrarme</button>
 						<button class="cancelar" type="reset" name="Cancelar"value="">Cancelar</button>
 					</form>
 				</article>
 			</section>
-
+    </div>
+    </div>
 <?php require_once "_footer.php" ?>

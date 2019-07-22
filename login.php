@@ -41,7 +41,7 @@
 			<header class="cabecera">
 							<nav class="main-nav" style=" margin-top: 25px; padding: 10px;">
 			<ul>
-			<li><a href="inicio.php"><b>Inicio</b></a></li>
+			<li><a href="index.php"><b>Inicio</b></a></li>
 			<!--<li><a href=" "><b>Quienes Somos</b></a></li>-->
 			<li><a href=""><b>Productos</b></a></li>
 			<li><a href="PregFrecuentesF.php"><b>Preguntas Frecuentes</b></a></li>
@@ -52,12 +52,11 @@
 			<?php require_once "_logo.php" ?>
 
 			</header>
-
-			<section>
-			<div class="Formulario">
-<div class="titulo" style="color: RGB(46, 139, 87)";>
-<h2>BIENVENIDO</h2>
-</div>
+		<section>
+	<div class="Formulario" style="align-items:center;">
+	<div class="titulo" style="color: RGB(46, 139, 87)";>
+			<h2>BIENVENIDO</h2>
+		</div>
 <br>
 <form method="post">
 <div class="mail">
@@ -83,7 +82,6 @@ value="<?= isset($emailPost) ? $emailPost : null; ?>">
 </div>
 <br>
 <input class="Recordarme" type="checkbox" name="Recordarme" value="Recordarme">Recordarme
-<br>
 <br>
 
 <button class="ingresar" type="submit" name="Registrarme" value="Ingresar" style="	background-color: RGB(46, 139, 87);

@@ -4,5 +4,5 @@
 
 	setcookie('email', '', -1);
 
-	header('location: inicio.php');
+	header('location: index.php');
 	exit;

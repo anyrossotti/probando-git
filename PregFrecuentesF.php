@@ -20,12 +20,13 @@
   <nav class="nav-login">
         <ul>
           <div class="volver-inicio">
-          <li><a href="inicio.php"><b>Inicio</b></a></li>
+          <li><a href="index.php"><b>Inicio</b></a></li>
           </div>
             <li><a href="registro.php"><b>Registro</b></a></li>
             <li><a href="login.php"><b>Login</b></a></li>
         </ul>
       </nav>
+
 
       <!-- Logo -->
       <?php require_once "_logo.php" ?>
